@@ -7,7 +7,7 @@ about:
   head: af5d204
   archived: false
   latestVersion: 
-  collectedAt: 2026-09-04T19:27:17Z
+  collectedAt: 2026-09-04T21:04:07Z
 timeline:
   created: 2021-09-18
   lastCommit: 2025-02-18
@@ -86,5 +86,58 @@ total:
   openIssue: 0
   commit: 1058
 ---
+path: /home/runner/.x-repo/github.com/nanake/librist
+collectedAt: 2026-09-04T21:04:09Z
+loc:
+  C:
+    code: 94718
+    comments: 16389
+    blanks: 17295
+    files: 137
+  CHeader:
+    code: 20010
+    comments: 35382
+    blanks: 4949
+    files: 164
+  Meson:
+    code: 618
+    comments: 51
+    blanks: 71
+    files: 9
+  CMake:
+    code: 219
+    comments: 12
+    blanks: 40
+    files: 3
+  Autoconf:
+    code: 22
+    comments: 13
+    blanks: 9
+    files: 3
+  Dockerfile:
+    code: 18
+    comments: 1
+    blanks: 5
+    files: 1
+  Sh:
+    code: 18
+    comments: 7
+    blanks: 6
+    files: 2
+  Markdown:
+    code: 0
+    comments: 129
+    blanks: 86
+    files: 3
+  Text:
+    code: 0
+    comments: 8
+    blanks: 2
+    files: 2
+total:
+  code: 115623
+  comments: 51992
+  blanks: 22463
+  files: 324
 ---
 
