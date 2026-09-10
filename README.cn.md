@@ -2,13 +2,25 @@
 
 [English version](./README.md)
 
-![librist](https://repo.x-cmd.io/librist.svg)
+![librist](https://repo.x-cmd.io/librist.svg?lang=zh)
 
 ## 安装
 
 ```sh
 x install librist
 ```
+
+## 代码规模
+
+合计: **115,623** 行代码（覆盖前 5 种语言、共 **316** 个文件）。
+
+| 语言 | 代码 | 注释 | 空行 | 文件数 |
+|------|-----:|-----:|-----:|------:|
+| C | 94,718 | 16,389 | 17,295 | 137 |
+| CHeader | 20,010 | 35,382 | 4,949 | 164 |
+| Meson | 618 | 51 | 71 | 9 |
+| CMake | 219 | 12 | 40 | 3 |
+| Autoconf | 22 | 13 | 9 | 3 |
 
 ## 源代码
 
@@ -28,20 +40,30 @@ x install librist
 | 时间窗口 | 起始 | 发布 | 已合并 PR | 开放 PR | 已关闭 issue | 开放 issue | 提交 |
 |---|---|---:|---:|---:|---:|---:|---:|
 | 30d | 2026-08-11 | 0 | 0 | 0 | 0 | 0 | 0 |
+| last60d | 2026-07-12 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 90d | 2026-06-12 | 0 | 0 | 0 | 0 | 0 | 0 |
+| last180d | 2026-03-14 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 360d | 2025-09-15 | 0 | 0 | 0 | 0 | 0 | 0 |
+| last720d | 2024-09-20 | 0 | 0 | 0 | 0 | 0 | 66 |
 
-## 代码规模
+## 发行版状态
 
-合计: **115,623** 行代码（覆盖前 5 种语言、共 **316** 个文件）。
+在 [repology.org](https://repology.org/project/librist) 上共有 **112** 个发行版报告此项目。**23** 个 ✅ 已是最新上游版本，**84** 个 ⚠️ 使用旧版本。
 
-| 语言 | 代码 | 注释 | 空行 | 文件数 |
-|------|-----:|-----:|-----:|------:|
-| C | 94,718 | 16,389 | 17,295 | 137 |
-| CHeader | 20,010 | 35,382 | 4,949 | 164 |
-| Meson | 618 | 51 | 71 | 9 |
-| CMake | 219 | 12 | 40 | 3 |
-| Autoconf | 22 | 13 | 9 | 3 |
+| 发行版 | 版本 | 状态 |
+|--------|------|------|
+| Debian unstable | `0.2.20` | ✅ latest |
+| Debian 14 | `0.2.20` | ✅ latest |
+| Debian 13 | `0.2.11` | ⚠️ outdated |
+| Ubuntu 26.04 LTS | `0.2.11` | ⚠️ outdated |
+| Ubuntu 24.04 LTS | `0.2.10` | ⚠️ outdated |
+| Arch | `0.2.20` | ✅ latest |
+| Homebrew | `0.2.20` | ✅ latest |
+| Fedora rawhide | `0.2.11` | ⚠️ outdated |
+| Nix unstable | `0.2.11` | ⚠️ outdated |
+| Void | `0.2.20` | ✅ latest |
+| Alpine edge | `0.2.15` | ⚠️ outdated |
+| openSUSE Tumbleweed | `0.2.11` | ⚠️ outdated |
 
 ## 改进这些数据
 
@@ -52,4 +74,4 @@ librist 的安装元数据由 [x-cmd/install](https://github.com/x-cmd/install) 
 
 本页面的数据（card / loc / scorecard / release）由 [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) 自动采集，每日重新生成。**安装行为**（版本选择、平台差异、依赖处理）的改进应提交到上游索引。
 
-_数据快照: `data/card/260910.yml` · 2026-09-10T06:15:09Z._
+_数据快照: `data/card/260910.yml` · 2026-09-10T20:22:24Z._
