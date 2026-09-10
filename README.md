@@ -48,7 +48,7 @@ Total: **115,623** lines of code across **316** files in the top 5 languages.
 
 ## Distribution status
 
-Reported by **112** distros on [repology.org](https://repology.org/project/librist). **23** are ✅ on the latest upstream release, **84** are ⚠️ on an older version.
+Reported by **112** distros on [repology.org](https://repology.org/project/librist). **24** are ✅ on the latest upstream release, **83** are ⚠️ on an older version.
 
 | Distro | Version | Status |
 |--------|---------|--------|
@@ -74,4 +74,4 @@ Install metadata for librist lives in the [x-cmd/install](https://github.com/x-c
 
 The data on this page (card / loc / scorecard / release) is auto-collected by [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) and is regenerated daily. Improvements to *install behaviour* (which version gets installed, platform-specific quirks, dependencies) belong upstream in the index.
 
-_Snapshot: `data/card/260910.yml` · 2026-09-10T20:22:23Z._
+_Snapshot: `data/card/260910.yml` · 2026-09-10T23:32:35Z._
