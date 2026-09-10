@@ -1,3 +1,33 @@
+- repo: deepin_25
+  subrepo: main
+  srcname: librist
+  binnames:
+    - librist-dev
+    - librist4
+    - rist-tools
+  visiblename: librist
+  version: 0.2.11
+  origversion: 0.2.11+dfsg-1
+  status: outdated
+  maintainers:
+    - florian@debian.org
+  categories:
+    - misc
+- repo: devuan_unstable
+  subrepo: unstable/main
+  srcname: librist
+  binnames:
+    - librist-dev
+    - librist4
+    - rist-tools
+  visiblename: librist
+  version: 0.2.20
+  origversion: 0.2.20+dfsg-1
+  status: newest
+  maintainers:
+    - florian@debian.org
+  categories:
+    - misc
 - repo: manjaro_unstable
   subrepo: extra
   srcname: librist
@@ -9,6 +39,34 @@
   summary: A library that can be used to add the RIST protocol to applications
   licenses:
     - BSD-2-Clause
+- repo: openkylin_3_0
+  subrepo: huanghe/main
+  srcname: librist
+  binnames:
+    - librist-dev
+    - librist4
+    - rist-tools
+  visiblename: librist
+  version: 0.2.10
+  origversion: 0.2.10+dfsg-ok1
+  status: legacy
+  maintainers:
+    - packaging@lists.openkylin.top
+  categories:
+    - libs
+- repo: nix_stable_25_11
+  srcname: librist
+  visiblename: librist
+  version: 0.2.11
+  origversion: null
+  status: outdated
+  summary: Library that can be used to easily add the RIST protocol to your application
+  maintainers:
+    - raphael-git@tapesoftware.net
+  licenses:
+    - BSD-2-Clause
+    - MIT
+    - ISC
 - repo: alpine_3_17
   subrepo: community
   srcname: librist
@@ -204,6 +262,21 @@
     - kevin@muxable.com
   licenses:
     - BSD-2-Clause
+- repo: debian_unstable
+  subrepo: sid/main
+  srcname: librist
+  binnames:
+    - librist-dev
+    - librist4
+    - rist-tools
+  visiblename: librist
+  version: 0.2.20
+  origversion: 0.2.20+dfsg-1
+  status: newest
+  maintainers:
+    - florian@debian.org
+  categories:
+    - misc
 - repo: alpine_3_22
   subrepo: community
   srcname: librist
@@ -334,6 +407,21 @@
     - kevin@muxable.com
   licenses:
     - BSD-2-Clause
+- repo: deepin_23
+  subrepo: main
+  srcname: librist
+  binnames:
+    - librist-dev
+    - librist4
+    - rist-tools
+  visiblename: librist
+  version: 0.2.7
+  origversion: 0.2.7+dfsg-1
+  status: outdated
+  maintainers:
+    - florian@debian.org
+  categories:
+    - libs
 - repo: alpine_edge
   subrepo: community
   srcname: librist
@@ -497,81 +585,6 @@
     - florian@debian.org
   categories:
     - misc
-- repo: debian_unstable
-  subrepo: sid/main
-  srcname: librist
-  binnames:
-    - librist-dev
-    - librist4
-    - rist-tools
-  visiblename: librist
-  version: 0.2.20
-  origversion: 0.2.20+dfsg-1
-  status: newest
-  maintainers:
-    - florian@debian.org
-  categories:
-    - misc
-- repo: deepin_23
-  subrepo: main
-  srcname: librist
-  binnames:
-    - librist-dev
-    - librist4
-    - rist-tools
-  visiblename: librist
-  version: 0.2.7
-  origversion: 0.2.7+dfsg-1
-  status: outdated
-  maintainers:
-    - florian@debian.org
-  categories:
-    - libs
-- repo: deepin_25
-  subrepo: main
-  srcname: librist
-  binnames:
-    - librist-dev
-    - librist4
-    - rist-tools
-  visiblename: librist
-  version: 0.2.11
-  origversion: 0.2.11+dfsg-1
-  status: outdated
-  maintainers:
-    - florian@debian.org
-  categories:
-    - misc
-- repo: devuan_unstable
-  subrepo: unstable/main
-  srcname: librist
-  binnames:
-    - librist-dev
-    - librist4
-    - rist-tools
-  visiblename: librist
-  version: 0.2.20
-  origversion: 0.2.20+dfsg-1
-  status: newest
-  maintainers:
-    - florian@debian.org
-  categories:
-    - misc
-- repo: openkylin_3_0
-  subrepo: huanghe/main
-  srcname: librist
-  binnames:
-    - librist-dev
-    - librist4
-    - rist-tools
-  visiblename: librist
-  version: 0.2.10
-  origversion: 0.2.10+dfsg-ok1
-  status: legacy
-  maintainers:
-    - packaging@lists.openkylin.top
-  categories:
-    - libs
 - repo: epel_9
   srcname: librist
   binnames:
@@ -762,9 +775,9 @@
   srcname: multimedia/librist
   binname: librist
   visiblename: multimedia/librist
-  version: 0.2.18
+  version: 0.2.20
   origversion: null
-  status: outdated
+  status: newest
   summary: Library for Reliable Internet Stream Transport (RIST) protocol
   maintainers:
     - yuri@freebsd.org
@@ -993,19 +1006,6 @@
     - MIT
     - ISC
 - repo: nix_stable_25_05
-  srcname: librist
-  visiblename: librist
-  version: 0.2.11
-  origversion: null
-  status: outdated
-  summary: Library that can be used to easily add the RIST protocol to your application
-  maintainers:
-    - raphael-git@tapesoftware.net
-  licenses:
-    - BSD-2-Clause
-    - MIT
-    - ISC
-- repo: nix_stable_25_11
   srcname: librist
   visiblename: librist
   version: 0.2.11
@@ -1494,19 +1494,6 @@
 - repo: void_x86_64
   subrepo: x86_64
   srcname: librist
-  binname: rist-utils
-  visiblename: rist-utils
-  version: 0.2.20
-  origversion: 0.2.20_1
-  status: newest
-  summary: Reliable Internet Stream Transport (RIST) - utils
-  maintainers:
-    - duncaen@voidlinux.org
-  licenses:
-    - BSD-2-Clause
-- repo: void_x86_64
-  subrepo: x86_64
-  srcname: librist
   binname: librist
   visiblename: librist
   version: 0.2.20
@@ -1526,6 +1513,19 @@
   origversion: 0.2.20_1
   status: newest
   summary: Reliable Internet Stream Transport (RIST) - development files
+  maintainers:
+    - duncaen@voidlinux.org
+  licenses:
+    - BSD-2-Clause
+- repo: void_x86_64
+  subrepo: x86_64
+  srcname: librist
+  binname: rist-utils
+  visiblename: rist-utils
+  version: 0.2.20
+  origversion: 0.2.20_1
+  status: newest
+  summary: Reliable Internet Stream Transport (RIST) - utils
   maintainers:
     - duncaen@voidlinux.org
   licenses:
