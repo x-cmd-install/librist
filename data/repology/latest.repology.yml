@@ -13,156 +13,51 @@
     - florian@debian.org
   categories:
     - libs
-- repo: manjaro_stable
-  subrepo: extra
+- repo: deepin_23
+  subrepo: main
   srcname: librist
-  binname: librist
+  binnames:
+    - librist-dev
+    - librist4
+    - rist-tools
+  visiblename: librist
+  version: 0.2.7
+  origversion: 0.2.7+dfsg-1
+  status: outdated
+  maintainers:
+    - florian@debian.org
+  categories:
+    - libs
+- repo: deepin_25
+  subrepo: main
+  srcname: librist
+  binnames:
+    - librist-dev
+    - librist4
+    - rist-tools
+  visiblename: librist
+  version: 0.2.11
+  origversion: 0.2.11+dfsg-1
+  status: outdated
+  maintainers:
+    - florian@debian.org
+  categories:
+    - misc
+- repo: devuan_unstable
+  subrepo: unstable/main
+  srcname: librist
+  binnames:
+    - librist-dev
+    - librist4
+    - rist-tools
   visiblename: librist
   version: 0.2.20
-  origversion: 0.2.20-1
+  origversion: 0.2.20+dfsg-1
   status: newest
-  summary: A library that can be used to add the RIST protocol to applications
-  licenses:
-    - BSD-2-Clause
-- repo: aerynos
-  srcname: librist
-  visiblename: librist
-  version: 0.2.20
-  origversion: null
-  status: newest
-  summary: A library that can be used to add the RIST protocol to applications
-  licenses:
-    - BSD-2-Clause
-- repo: alpine_3_17
-  subrepo: community
-  srcname: librist
-  binname: librist
-  visiblename: librist
-  version: 0.2.7
-  origversion: 0.2.7-r0
-  status: outdated
-  summary: Reliable Internet Stream Transport (RIST)
   maintainers:
-    - kevin@muxable.com
-  licenses:
-    - BSD-2-Clause
-- repo: alpine_3_17
-  subrepo: community
-  srcname: librist
-  binname: librist-dev
-  visiblename: librist-dev
-  version: 0.2.7
-  origversion: 0.2.7-r0
-  status: outdated
-  summary: Reliable Internet Stream Transport (RIST) (development files)
-  maintainers:
-    - kevin@muxable.com
-  licenses:
-    - BSD-2-Clause
-- repo: alpine_3_17
-  subrepo: community
-  srcname: librist
-  binname: librist-progs
-  visiblename: librist-progs
-  version: 0.2.7
-  origversion: 0.2.7-r0
-  status: outdated
-  summary: Tools for working with RIST
-  maintainers:
-    - kevin@muxable.com
-  licenses:
-    - BSD-2-Clause
-- repo: alpine_3_18
-  subrepo: community
-  srcname: librist
-  binname: librist
-  visiblename: librist
-  version: 0.2.7
-  origversion: 0.2.7-r0
-  status: outdated
-  summary: Reliable Internet Stream Transport (RIST)
-  maintainers:
-    - kevin@muxable.com
-  licenses:
-    - BSD-2-Clause
-- repo: alpine_3_18
-  subrepo: community
-  srcname: librist
-  binname: librist-dev
-  visiblename: librist-dev
-  version: 0.2.7
-  origversion: 0.2.7-r0
-  status: outdated
-  summary: Reliable Internet Stream Transport (RIST) (development files)
-  maintainers:
-    - kevin@muxable.com
-  licenses:
-    - BSD-2-Clause
-- repo: alpine_3_18
-  subrepo: community
-  srcname: librist
-  binname: librist-progs
-  visiblename: librist-progs
-  version: 0.2.7
-  origversion: 0.2.7-r0
-  status: outdated
-  summary: Tools for working with RIST
-  maintainers:
-    - kevin@muxable.com
-  licenses:
-    - BSD-2-Clause
-- repo: alpine_3_19
-  subrepo: community
-  srcname: librist
-  binname: librist
-  visiblename: librist
-  version: 0.2.10
-  origversion: 0.2.10-r0
-  status: outdated
-  summary: Reliable Internet Stream Transport (RIST)
-  maintainers:
-    - kevin@muxable.com
-  licenses:
-    - BSD-2-Clause
-- repo: alpine_3_19
-  subrepo: community
-  srcname: librist
-  binname: librist-dev
-  visiblename: librist-dev
-  version: 0.2.10
-  origversion: 0.2.10-r0
-  status: outdated
-  summary: Reliable Internet Stream Transport (RIST) (development files)
-  maintainers:
-    - kevin@muxable.com
-  licenses:
-    - BSD-2-Clause
-- repo: alpine_3_19
-  subrepo: community
-  srcname: librist
-  binname: librist-progs
-  visiblename: librist-progs
-  version: 0.2.10
-  origversion: 0.2.10-r0
-  status: outdated
-  summary: Tools for working with RIST
-  maintainers:
-    - kevin@muxable.com
-  licenses:
-    - BSD-2-Clause
-- repo: alpine_3_20
-  subrepo: community
-  srcname: librist
-  binname: librist
-  visiblename: librist
-  version: 0.2.10
-  origversion: 0.2.10-r1
-  status: outdated
-  summary: Reliable Internet Stream Transport (RIST)
-  maintainers:
-    - kevin@muxable.com
-  licenses:
-    - BSD-2-Clause
+    - florian@debian.org
+  categories:
+    - misc
 - repo: openkylin_3_0
   subrepo: huanghe/main
   srcname: librist
@@ -178,6 +73,145 @@
     - packaging@lists.openkylin.top
   categories:
     - libs
+- repo: aerynos
+  srcname: librist
+  visiblename: librist
+  version: 0.2.20
+  origversion: null
+  status: newest
+  summary: A library that can be used to add the RIST protocol to applications
+  licenses:
+    - BSD-2-Clause
+- repo: alpine_3_17
+  subrepo: community
+  srcname: librist
+  binname: librist-dev
+  visiblename: librist-dev
+  version: 0.2.7
+  origversion: 0.2.7-r0
+  status: outdated
+  summary: Reliable Internet Stream Transport (RIST) (development files)
+  maintainers:
+    - kevin@muxable.com
+  licenses:
+    - BSD-2-Clause
+- repo: alpine_3_17
+  subrepo: community
+  srcname: librist
+  binname: librist-progs
+  visiblename: librist-progs
+  version: 0.2.7
+  origversion: 0.2.7-r0
+  status: outdated
+  summary: Tools for working with RIST
+  maintainers:
+    - kevin@muxable.com
+  licenses:
+    - BSD-2-Clause
+- repo: alpine_3_17
+  subrepo: community
+  srcname: librist
+  binname: librist
+  visiblename: librist
+  version: 0.2.7
+  origversion: 0.2.7-r0
+  status: outdated
+  summary: Reliable Internet Stream Transport (RIST)
+  maintainers:
+    - kevin@muxable.com
+  licenses:
+    - BSD-2-Clause
+- repo: alpine_3_18
+  subrepo: community
+  srcname: librist
+  binname: librist
+  visiblename: librist
+  version: 0.2.7
+  origversion: 0.2.7-r0
+  status: outdated
+  summary: Reliable Internet Stream Transport (RIST)
+  maintainers:
+    - kevin@muxable.com
+  licenses:
+    - BSD-2-Clause
+- repo: alpine_3_18
+  subrepo: community
+  srcname: librist
+  binname: librist-dev
+  visiblename: librist-dev
+  version: 0.2.7
+  origversion: 0.2.7-r0
+  status: outdated
+  summary: Reliable Internet Stream Transport (RIST) (development files)
+  maintainers:
+    - kevin@muxable.com
+  licenses:
+    - BSD-2-Clause
+- repo: alpine_3_18
+  subrepo: community
+  srcname: librist
+  binname: librist-progs
+  visiblename: librist-progs
+  version: 0.2.7
+  origversion: 0.2.7-r0
+  status: outdated
+  summary: Tools for working with RIST
+  maintainers:
+    - kevin@muxable.com
+  licenses:
+    - BSD-2-Clause
+- repo: alpine_3_19
+  subrepo: community
+  srcname: librist
+  binname: librist
+  visiblename: librist
+  version: 0.2.10
+  origversion: 0.2.10-r0
+  status: outdated
+  summary: Reliable Internet Stream Transport (RIST)
+  maintainers:
+    - kevin@muxable.com
+  licenses:
+    - BSD-2-Clause
+- repo: alpine_3_19
+  subrepo: community
+  srcname: librist
+  binname: librist-dev
+  visiblename: librist-dev
+  version: 0.2.10
+  origversion: 0.2.10-r0
+  status: outdated
+  summary: Reliable Internet Stream Transport (RIST) (development files)
+  maintainers:
+    - kevin@muxable.com
+  licenses:
+    - BSD-2-Clause
+- repo: alpine_3_19
+  subrepo: community
+  srcname: librist
+  binname: librist-progs
+  visiblename: librist-progs
+  version: 0.2.10
+  origversion: 0.2.10-r0
+  status: outdated
+  summary: Tools for working with RIST
+  maintainers:
+    - kevin@muxable.com
+  licenses:
+    - BSD-2-Clause
+- repo: alpine_3_20
+  subrepo: community
+  srcname: librist
+  binname: librist
+  visiblename: librist
+  version: 0.2.10
+  origversion: 0.2.10-r1
+  status: outdated
+  summary: Reliable Internet Stream Transport (RIST)
+  maintainers:
+    - kevin@muxable.com
+  licenses:
+    - BSD-2-Clause
 - repo: alpine_3_20
   subrepo: community
   srcname: librist
@@ -399,6 +433,21 @@
     - kevin@muxable.com
   licenses:
     - BSD-2-Clause
+- repo: debian_unstable
+  subrepo: sid/main
+  srcname: librist
+  binnames:
+    - librist-dev
+    - librist4
+    - rist-tools
+  visiblename: librist
+  version: 0.2.20
+  origversion: 0.2.20+dfsg-1
+  status: newest
+  maintainers:
+    - florian@debian.org
+  categories:
+    - misc
 - repo: altsisyphus
   srcname: librist
   binnames:
@@ -553,66 +602,6 @@
     - misc
 - repo: debian_14
   subrepo: forky/main
-  srcname: librist
-  binnames:
-    - librist-dev
-    - librist4
-    - rist-tools
-  visiblename: librist
-  version: 0.2.20
-  origversion: 0.2.20+dfsg-1
-  status: newest
-  maintainers:
-    - florian@debian.org
-  categories:
-    - misc
-- repo: debian_unstable
-  subrepo: sid/main
-  srcname: librist
-  binnames:
-    - librist-dev
-    - librist4
-    - rist-tools
-  visiblename: librist
-  version: 0.2.20
-  origversion: 0.2.20+dfsg-1
-  status: newest
-  maintainers:
-    - florian@debian.org
-  categories:
-    - misc
-- repo: deepin_23
-  subrepo: main
-  srcname: librist
-  binnames:
-    - librist-dev
-    - librist4
-    - rist-tools
-  visiblename: librist
-  version: 0.2.7
-  origversion: 0.2.7+dfsg-1
-  status: outdated
-  maintainers:
-    - florian@debian.org
-  categories:
-    - libs
-- repo: deepin_25
-  subrepo: main
-  srcname: librist
-  binnames:
-    - librist-dev
-    - librist4
-    - rist-tools
-  visiblename: librist
-  version: 0.2.11
-  origversion: 0.2.11+dfsg-1
-  status: outdated
-  maintainers:
-    - florian@debian.org
-  categories:
-    - misc
-- repo: devuan_unstable
-  subrepo: unstable/main
   srcname: librist
   binnames:
     - librist-dev
@@ -797,18 +786,6 @@
     - BSD-2-Clause and ISC
   categories:
     - Unspecified
-- repo: freebsd
-  srcname: multimedia/librist
-  binname: librist
-  visiblename: multimedia/librist
-  version: 0.2.20
-  origversion: null
-  status: newest
-  summary: Library for Reliable Internet Stream Transport (RIST) protocol
-  maintainers:
-    - yuri@freebsd.org
-  categories:
-    - multimedia
 - repo: openkylin_3_0
   subrepo: huanghe-proposed/main
   srcname: librist
@@ -824,6 +801,18 @@
     - packaging@lists.openkylin.top
   categories:
     - libs
+- repo: freebsd
+  srcname: multimedia/librist
+  binname: librist
+  visiblename: multimedia/librist
+  version: 0.2.20
+  origversion: null
+  status: newest
+  summary: Library for Reliable Internet Stream Transport (RIST) protocol
+  maintainers:
+    - yuri@freebsd.org
+  categories:
+    - multimedia
 - repo: gentoo
   srcname: net-libs/librist
   visiblename: net-libs/librist
@@ -952,17 +941,6 @@
     - BSD-2-Clause and ISC
   categories:
     - System/Libraries
-- repo: manjaro_testing
-  subrepo: extra
-  srcname: librist
-  binname: librist
-  visiblename: librist
-  version: 0.2.20
-  origversion: 0.2.20-1
-  status: newest
-  summary: A library that can be used to add the RIST protocol to applications
-  licenses:
-    - BSD-2-Clause
 - repo: manjaro_unstable
   subrepo: extra
   srcname: librist
