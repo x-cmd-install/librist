@@ -1,3 +1,10 @@
+- repo: homebrew
+  srcname: librist
+  visiblename: librist
+  version: HEAD
+  origversion: null
+  status: rolling
+  summary: Reliable Internet Stream Transport (RIST)
 - repo: aerynos
   srcname: librist
   visiblename: librist
@@ -33,6 +40,21 @@
     - kevin@muxable.com
   licenses:
     - BSD-2-Clause
+- repo: kali_rolling
+  subrepo: main
+  srcname: librist
+  binnames:
+    - librist-dev
+    - librist4
+    - rist-tools
+  visiblename: librist
+  version: 0.2.20
+  origversion: 0.2.20+dfsg-1
+  status: newest
+  maintainers:
+    - florian@debian.org
+  categories:
+    - misc
 - repo: alpine_3_17
   subrepo: community
   srcname: librist
@@ -652,6 +674,20 @@
     - BSD-2-Clause and ISC
   categories:
     - Unspecified
+- repo: nix_stable_24_11
+  srcname: librist
+  visiblename: librist
+  version: 0.2.10
+  origversion: null
+  status: outdated
+  summary: Library that can be used to easily add the RIST protocol to your application
+  maintainers:
+    - raphael-git@tapesoftware.net
+    - mail@sebastian-sellmeier.de
+  licenses:
+    - BSD-2-Clause
+    - MIT
+    - ISC
 - repo: fedora_40
   subrepo: release
   srcname: librist
@@ -739,6 +775,23 @@
     - BSD-2-Clause and ISC
   categories:
     - Unspecified
+- repo: fedora_45
+  subrepo: release
+  srcname: librist
+  binnames:
+    - librist
+    - librist-devel
+    - librist-doc
+    - rist-tools
+  visiblename: librist
+  version: 0.2.11
+  origversion: 0.2.11-2.fc45
+  status: outdated
+  summary: Library for Reliable Internet Stream Transport (RIST) protocol
+  licenses:
+    - BSD-2-Clause and ISC
+  categories:
+    - Unspecified
 - repo: fedora_rawhide
   subrepo: development
   srcname: librist
@@ -801,28 +854,6 @@
   origversion: null
   status: newest
   summary: Reliable Internet Stream Transport (RIST)
-- repo: homebrew
-  srcname: librist
-  visiblename: librist
-  version: HEAD
-  origversion: null
-  status: rolling
-  summary: Reliable Internet Stream Transport (RIST)
-- repo: kali_rolling
-  subrepo: main
-  srcname: librist
-  binnames:
-    - librist-dev
-    - librist4
-    - rist-tools
-  visiblename: librist
-  version: 0.2.20
-  origversion: 0.2.20+dfsg-1
-  status: newest
-  maintainers:
-    - florian@debian.org
-  categories:
-    - misc
 - repo: liguros_stable
   srcname: net-libs/librist
   visiblename: net-libs/librist
@@ -879,6 +910,21 @@
     - BSD-2-Clause and ISC
   categories:
     - System/Libraries
+- repo: ubuntu_25_04
+  subrepo: plucky/universe
+  srcname: librist
+  binnames:
+    - librist-dev
+    - librist4
+    - rist-tools
+  visiblename: librist
+  version: 0.2.11
+  origversion: 0.2.11+dfsg-1
+  status: outdated
+  maintainers:
+    - florian@debian.org
+  categories:
+    - universe/misc
 - repo: mageia_cauldron
   subrepo: core/release
   srcname: librist
@@ -980,20 +1026,6 @@
   origversion: null
   status: outdated
   summary: A library that can be used to easily add the RIST protocol to your application.
-  maintainers:
-    - raphael-git@tapesoftware.net
-    - mail@sebastian-sellmeier.de
-  licenses:
-    - BSD-2-Clause
-    - MIT
-    - ISC
-- repo: nix_stable_24_11
-  srcname: librist
-  visiblename: librist
-  version: 0.2.10
-  origversion: null
-  status: outdated
-  summary: Library that can be used to easily add the RIST protocol to your application
   maintainers:
     - raphael-git@tapesoftware.net
     - mail@sebastian-sellmeier.de
@@ -1181,6 +1213,21 @@
     - BSD-2-Clause
   categories:
     - System/Libraries
+- repo: ubuntu_25_10
+  subrepo: questing/universe
+  srcname: librist
+  binnames:
+    - librist-dev
+    - librist4
+    - rist-tools
+  visiblename: librist
+  version: 0.2.11
+  origversion: 0.2.11+dfsg-1
+  status: outdated
+  maintainers:
+    - florian@debian.org
+  categories:
+    - universe/misc
 - repo: openmandriva_cooker
   subrepo: main/release
   srcname: librist
@@ -1272,7 +1319,7 @@
   licenses:
     - BSD-2-Clause
 - repo: parrot
-  subrepo: parrot/main
+  subrepo: parrot-updates/main
   srcname: librist
   binnames:
     - librist-dev
@@ -1287,7 +1334,7 @@
   categories:
     - misc
 - repo: parrot
-  subrepo: parrot-updates/main
+  subrepo: parrot/main
   srcname: librist
   binnames:
     - librist-dev
@@ -1513,36 +1560,6 @@
   visiblename: librist
   version: 0.2.10
   origversion: 0.2.10+dfsg-2
-  status: outdated
-  maintainers:
-    - florian@debian.org
-  categories:
-    - universe/misc
-- repo: ubuntu_25_04
-  subrepo: plucky/universe
-  srcname: librist
-  binnames:
-    - librist-dev
-    - librist4
-    - rist-tools
-  visiblename: librist
-  version: 0.2.11
-  origversion: 0.2.11+dfsg-1
-  status: outdated
-  maintainers:
-    - florian@debian.org
-  categories:
-    - universe/misc
-- repo: ubuntu_25_10
-  subrepo: questing/universe
-  srcname: librist
-  binnames:
-    - librist-dev
-    - librist4
-    - rist-tools
-  visiblename: librist
-  version: 0.2.11
-  origversion: 0.2.11+dfsg-1
   status: outdated
   maintainers:
     - florian@debian.org
